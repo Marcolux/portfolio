@@ -8,6 +8,8 @@ let projects = document.getElementById('Projects')
 let nav = document.querySelector('nav')
 let projectsLink = document.getElementById('projectsLink')
 
+let contactsLink= document.getElementById('contactsLink')
+let footer= document.querySelector('footer')
 
 displayMenuLeft.addEventListener('click',()=>{
     console.log('hi')
@@ -19,6 +21,7 @@ displayMenuLeft.addEventListener('click',()=>{
     projects.style.display='flex'
     displayMenuRight.style.transition = '.25s ease'
     displayMenuLeft.style.transition = '.25s ease'
+    footer.style.height='0vh'
     
 
 
@@ -38,7 +41,7 @@ displayMenuRight.addEventListener('click',()=>{
     displayMenuRight.style.right='1px'
     displayMenuRight.style.transition = '1s ease'
     projects.style.display = 'none';
-    
+    footer.style.height='0vh'
 
     if(displayMenuRight.style.right==='1px')
     {   displayMenuRight.style.zIndex='-1'
@@ -56,4 +59,12 @@ projectsLink.addEventListener('click', ()=>{
         
     }
     
+})
+
+contactsLink.addEventListener('click',()=>{
+ 
+if(footer.style.height==='0vh'){
+footer.style.height='10vh'
+}else if(footer.style.height==='10vh'){
+    footer.style.height='0vh'}
 })
