@@ -1,0 +1,326 @@
+html{
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family:'Tw Cen MT';
+    opacity: 1;
+    background-color: black;
+}
+body{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    background-color: black;
+}
+
+
+/* _____________________________________________ */
+/*                  NAV BAR                     */
+#displayMenuLeft,#displayMenuRight{
+    display: flex;
+    height: 98%;
+    font-size:2vw;
+    font-weight: 900;
+    transition: .3s ease;
+    position: absolute;
+    right: 1px;
+    width: 3vw;
+    align-items: center;
+    justify-items: center;
+    background: rgb(255, 207, 103);
+    border:none;
+    color:rgba(248, 68, 3, 0.913);
+}
+@media only screen and (min-width: 1600px) {
+    #displayMenuLeft,#displayMenuRight{
+        width: 2.5vw;
+    }
+}
+#displayMenuRight span{
+    padding-left: .5vw;
+}
+#displayMenuLeft span{
+    margin-right: 1vw;
+    text-align: center;
+    padding-left: 0px;
+    width: 3vw;
+}
+
+nav{
+    width:0vw;
+    height: 9vh;
+    padding: 0;
+    margin-left: 10vw;
+    display: flex;
+    position: fixed;
+    right: 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%,rgb(0, 0, 0) 90%, rgb(0, 0, 0)100%);
+    z-index: 1;
+    opacity: 1;
+    align-items: center;
+    transition: .4s ease;
+   
+   
+}
+#navigationBar {
+    display: flex;
+    height: 100%;
+    width: 0vw;
+    justify-content:space-evenly;
+    align-items: center;
+    opacity: 1;
+    font-size: 3vh;
+    padding: 0vh;
+    margin-left: 25%;
+    animation: 1s appear;
+    transition: .2s ease;
+    overflow: hidden;
+    right: 0vw;
+    position: absolute;
+    justify-self: center;
+}
+
+
+.barLi{
+    color:rgb(255, 207, 103);
+    text-shadow: .1vh .05vh rgba(248, 68, 3, 0.913);
+    list-style: none;
+    text-decoration: none;
+    padding: 0%;
+    overflow: hidden;
+}
+.barLi:hover{
+    cursor: pointer;
+}
+
+
+/*                  NAV BAR END                  */
+/* _____________________________________________ */
+
+#PresentationBack{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background:url('./imgs/colorDust.jpeg'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    /* object-fit: cover; */
+    opacity: 1;
+}
+
+#overlay{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 207, 103);
+    text-shadow: .25vh .1vw rgba(248, 68, 3, 0.913);
+    background: linear-gradient(0deg, rgb(0, 0, 0)0%, rgba(255, 255, 255, 0) 55%, rgba(254, 254, 254, 0)100%);
+    opacity: 1;
+}
+#overlay {
+    /* font-size: 9vh; */
+    letter-spacing: .1vw;
+    font-weight: bolder;
+    /* background: linear-gradient(100deg,#FA7A00, #FAD900,#ffffff);
+    background-clip:text;
+    -webkit-background-clip: text;
+    box-shadow: 3px .1px black;
+    color: transparent;*/
+    opacity: 1; 
+}
+
+#overlay h1{
+    position: absolute;
+    top:68vh;
+    font-size: 10vh;
+    padding: 0%;
+    margin: 0%;
+    
+}
+#overlay h3{
+    position: absolute;
+    top: 80vh;
+    font-size: 5vh;
+    padding: 0%;
+    margin: 0%;
+    letter-spacing: .2vw;
+}
+
+#Projects{
+    display:flex;
+    position: absolute;
+    top: 9vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 0vh;
+    transition: .3s ease;
+    overflow: hidden;
+    /* background: linear-gradient(0deg,#0D0D0D 0%,#D94141 22%,#F2600C 40%,#F2A922 60%,#0476D9 80%,rgba(255, 255, 255, 0) 100% ); */
+    background: #ffffff;
+}
+
+.singleProject{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    margin: 2vw;
+    width: 26vw;
+    height: 30vh;
+    border: 1px solid rgb(0, 0, 0, 0.413);
+    border-radius: 1vh;
+    box-shadow: -1px -1px 13px 5px rgba(0, 0, 0, 0.413);
+    padding: 1vw;
+
+
+}
+
+.singleProject img{
+    /* height: 15vh;
+    width: 25vw; */
+    border: 1px solid white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: burlywood;
+    transition: 0.7s ease;
+    overflow: hidden;
+}
+
+.singleProject p{
+ 
+ width: 100%;
+ border: 1px solid white;
+ color: white;
+ bottom: 100%;
+ /* left: 0;
+ right: 0; */
+ background-color: cadetblue;
+ height: 0;
+ transition: 1s ease-in;
+ overflow: hidden;
+}
+
+.singleProject:hover p{
+   
+    height: 110vh;
+}
+.singleProject:hover img{
+    height: 0;
+}
+
+
+footer{
+    height:20vh ;
+    width: 100vw;
+    position: absolute;
+    top: 110vh;
+    color:rgb(255, 207, 103);
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    width: 50vw;
+    justify-content: space-evenly;
+    margin-left: 20vw;
+}
+footer ul a{
+    font-style: none;
+    color:rgb(255, 207, 103);
+}
+footer ul a:hover{
+    color: rgba(248, 68, 3, 0.913);
+}
+
+#Up{
+    position: absolute;
+    right: 10vw;
+    font-family:'Tw Cen MT';
+    background: none;
+    border:2px solid rgb(255, 207, 103);
+    color:rgb(255, 207, 103);
+    width: 4vw;
+    padding-top: .5vh;
+    padding-bottom: .7vh;
+    font-size: 2vw;
+    text-align: center;
+    justify-items: center;
+    text-decoration: none;
+}
+
+#Up:hover{
+    background: rgb(255, 207, 103);
+    border: none;
+    color: rgba(248, 68, 3, 0.913);
+}
+
+
+
+@media only screen and (min-width: 1500px) {
+    /* #displayMenuLeft,#displayMenuRight{
+        width: 2.5vw;
+    } */
+    .singleProject{
+       
+        width: 16vw;
+       
+    }
+}
+@media only screen and (max-width: 700px) {
+    .singleProject{
+        width: 85vw;
+    }
+
+    #Projects{
+        overflow:scroll;
+    }
+    
+    #overlay h1{
+        font-size: 12vw;
+        top: 50vh;
+    }
+    #overlay h3{
+        font-size: 7vw;
+        top: 60vh;
+    }
+    nav{
+        background: black;
+        max-width: 91vw;
+        border-bottom: 2px solid rgb(255, 207, 103);
+    }
+    #displayMenuLeft,#displayMenuRight{
+        width: 10vw;
+        font-size: 4vh;
+        height: 9.5vh;
+    }
+    footer{
+        height: 5vh;
+        margin-bottom: 2vh;
+        
+    }
+    #contacts ul{
+        margin-left: 0;
+        margin-bottom: 15vh;
+        justify-content:space-around;
+        width: 100%;
+        height: 4vh;
+        font-size: 5vw;
+        padding: 0;
+    }
+    #Up{
+     display: none;
+    }
+}
