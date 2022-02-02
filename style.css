@@ -312,6 +312,7 @@ footer ul a:hover{
 @media only screen and (max-width: 800px) {
     #overlay{
         background: none;
+        opacity: 1;
     }
     .singleProject{
         width: 85vw;
