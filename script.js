@@ -26,8 +26,8 @@ displayMenuLeft.addEventListener('click',()=>{
 
 
     if(displayMenuRight.style.right='99%'){
-        displayMenuLeft.style.zIndex='-1'
-        displayMenuRight.style.zIndex='1'
+        displayMenuLeft.style.display='none'
+        displayMenuRight.style.display='flex'
         nav.style.width = '98vw'
     }
 })
@@ -44,8 +44,8 @@ displayMenuRight.addEventListener('click',()=>{
     footer.style.height='0vh'
 
     if(displayMenuRight.style.right==='1px')
-    {   displayMenuRight.style.zIndex='-1'
-        displayMenuLeft.style.zIndex='1'
+    {   displayMenuRight.style.display='none'
+        displayMenuLeft.style.display='flex'
         nav.style.width = '0vw'
 }})
 
