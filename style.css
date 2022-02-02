@@ -187,8 +187,6 @@ nav{
 }
 
 .singleProject img{
-    /* height: 15vh;
-    width: 25vw; */
     border: 1px solid rgb(0, 0, 0);
     border-radius: 1vw;
     display: block;
@@ -203,21 +201,15 @@ nav{
  border: 1px solid white;
  color: white;
  bottom: 100%;
- /* margin-top:5px ; */
  background: black;
  height: 0;
  transition: 1s ease;
  overflow: hidden;
  font-size: 20px;
-
 text-justify:distribute;
-/* align-items: center; */
+
 }
-/* 
-.description:hover {
-   
-    height: 110vh;
-} */
+
 .singleProject:hover p{
     height: 110vh;
     padding: 15px;
@@ -317,7 +309,7 @@ footer ul a:hover{
         justify-content:space-around;
     }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .singleProject{
         width: 85vw;
     }
@@ -349,11 +341,12 @@ footer ul a:hover{
         background: black;
         max-width: 91vw;
         border-bottom: 2px solid rgb(255, 207, 103);
+        padding-bottom: 1vh;
     }
     #displayMenuLeft,#displayMenuRight{
         width: 10vw;
         font-size: 4vh;
-        height: 9.5vh;
+        height: 11vh;
     }
     footer{
         height: 15vh;
