@@ -344,13 +344,14 @@ footer ul a:hover{
     nav{
         background: black;
         max-width: 91vw;
-        border-bottom: 2px solid rgb(255, 207, 103);
+        /* border-bottom: 2px solid rgb(255, 207, 103); */
         padding-bottom: 1vh;
     }
     #displayMenuLeft,#displayMenuRight{
         width: 10vw;
         font-size: 4vh;
         height: 11vh;
+        border-bottom: 2px solid rgb(255, 207, 103);
     }
     footer{
         height: 15vh;
