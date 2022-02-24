@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marco C Colucci</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imgs/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Poppins:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e1d2fadb6b.js" crossorigin="anonymous"></script>
 </head>
 <header>
     <nav class="nav">
-        <button id="displayMenuRight"><span>&#9002</span></button>
+        <button class="displayMenu" id="displayMenuRight"><span>&#9002</span></button>
         <ul id="navigationBar">
-            <!-- <a class="barLi" href="#aboutMe"><li></li></a> -->
-            <a class="barLi"  id="projectsLink"><li >Projects</li></a>
+            <li class="barLi" id="aboutMeLink">About Me</li>
+            <li class="barLi"  id="projectsLink">Projects</li>
+            <!-- <li class="barLi"  id="skillsLink">Skills</li> -->
             <a class="barLi" href="#contacts" id="contactsLink"><li>Contacts</li></a>
             
             
         </ul>
-        <button id="displayMenuLeft"><span>&#9001</span></button>
+        <button class="displayMenu"  id="displayMenuLeft"><span>&#9001</span></button>
     </nav>
     
 </header>
@@ -32,7 +34,19 @@
         </div>
         
     </section>
-    <section id="aboutMe"></section>
+    <section id="aboutMe">
+        <img id="Chicago" class="aboutMePic" src="./imgs/187AF1CA-01D2-4962-89AD-1C738644F2AC.jpeg" alt="Chicago">
+        <div id="infoAboutMe" >
+            <!-- <img id="me" class="aboutMePic" src="./imgs/Marco.png" alt="Chicago"> -->
+            <div id="aboutMeText">
+            <p>
+            As a Software Engineer I love to push my coding skills and creativity to the next level for every project I'm working on.<br>
+            I'm a strong team member, but also a great solo player when required. I pay close attention for details and design.<br> 
+            </p>
+            </div>
+        </div>
+        <img id="Bari" class="aboutMePic" src="./imgs/Bari2.jpeg" alt="Bari">
+    </section>
     <section id="Projects">
         <div class="singleProject">
             <img src="./imgs/hangman.png">
