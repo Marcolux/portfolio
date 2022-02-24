@@ -11,6 +11,7 @@ body{
     margin: 0;
     opacity: 1;
     background-color: black;
+    /* height: 100vh; */
 }
 
 
@@ -98,7 +99,11 @@ nav{
 
 /*                  NAV BAR END                  */
 /* _____________________________________________ */
-
+#Presentation{
+    /* margin: 0;
+    padding: 0;
+    height: 100vh; */
+}
 #PresentationBack{
     width: 100vw;
     height: 100vh;
@@ -111,6 +116,8 @@ nav{
     z-index: -1;
     /* object-fit: cover; */
     opacity: 1;
+    margin: 0;
+    padding: 0;
 }
 
 #overlay{
@@ -125,11 +132,14 @@ nav{
     text-shadow: .25vh .1vw rgba(248, 68, 3, 0.913);
     background: linear-gradient(0deg, rgb(0, 0, 0)0%, rgba(255, 255, 255, 0) 55%, rgba(254, 254, 254, 0)100%);
     opacity: 1;
+    letter-spacing: .1vw;
+    font-weight: bolder;
+    /* margin: 0%;
+    padding: 0%; */
 }
 #overlay {
     /* font-size: 9vh; */
-    letter-spacing: .1vw;
-    font-weight: bolder;
+    
     /* background: linear-gradient(100deg,#FA7A00, #FAD900,#ffffff);
     background-clip:text;
     -webkit-background-clip: text;
@@ -166,6 +176,7 @@ nav{
     padding: 0;
     overflow: hidden;
     transition: .7s;
+    padding: 0vh;
 
 }
 .aboutMePic{
@@ -228,9 +239,10 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40vw;
+    width: 50vw;
     height: 35vh;
     text-align: justify;
+    margin: 1vw;
 }
 #infoAboutMe:hover{
     box-shadow: 1px 1px 23px 5px rgb(255, 197, 72);
@@ -411,6 +423,11 @@ footer ul a:hover{
         margin-left:5vw;
         margin-right:5vw;
         width: 90vw;
+    }
+    #aboutMeText{
+        overflow: scroll;
+        width: 60vw;
+        justify-content: left;
     }
     .aboutMePic:hover{
         width: 80%;

@@ -61,7 +61,7 @@ projectsLink.addEventListener('click', ()=>{
     console.log('hi')
     if(projects.style.height === '0vh'){
         aboutMe.style.height= '0vh'
-        projects.style.height= '90vh';}
+        projects.style.height= '91vh';}
     else{
         projects.style.height= '0vh'
         
@@ -71,7 +71,7 @@ projectsLink.addEventListener('click', ()=>{
 
 aboutMeLink.addEventListener('click',()=>{
     if(aboutMe.style.height === '0vh'){
-        aboutMe.style.height= '90vh'
+        aboutMe.style.height= '91vh'
         projects.style.height = '0vh'
     }else{
         aboutMe.style.height= '0vh'
@@ -87,6 +87,3 @@ footer.style.height='10vh'
 })
 
 
-class SoftwareEngineer{
-    constructor(fullstack){}
-}
