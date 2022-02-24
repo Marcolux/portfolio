@@ -184,10 +184,9 @@ nav{
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.568);
     box-shadow: 1px 1px 23px 1px rgba(0, 0, 0, 0.709);
-    /* margin-left: 10vw; */
-    /* margin-top: 10vw; */
     background: #ffffff;
     transition: 0.7s;
+    opacity: 1;
 }
 .aboutMePic:hover{
     width: 30vw;
@@ -203,8 +202,9 @@ nav{
 }
 #Bari{
     position: absolute;
-    bottom: 3vh;
-    right: 3vh;
+    top: 3vh;
+    right: 5vh;
+    transition: .7s;
     
 }
 #me{
@@ -218,19 +218,22 @@ nav{
 }
 #infoAboutMe{
     display: flex;
-    width: 60vw;
-    height: 40vh;
+    width: 66vw;
+    height: 53vh;
     background: rgb(251, 251, 251);
     justify-self: center;
-    align-self: center;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    align-self:flex-end;
+    margin-left: 17vw;
+    margin-right: 17vw;
+    margin-bottom: 10vh;
     z-index: 1;
     border-radius: 1.5vh;
     border: 1px solid rgba(0, 0, 0, 0.568);
     box-shadow: 1px 1px 23px 1px rgba(0, 0, 0, 0.657);
     justify-content: center;
     align-items: center;
+    padding: 0;
+    transition: .7s;
 }
 #aboutMeText{
     display: flex;
@@ -238,16 +241,23 @@ nav{
     justify-content: center;
     align-items: center;
     width: 50vw;
-    height: 35vh;
+    height: 40vh;
     text-align: justify;
-    margin: 1vw;
+
+    padding: 1vw;
 }
 #infoAboutMe:hover{
     box-shadow: 1px 1px 23px 5px rgb(255, 197, 72);
+
 }
 
-#aboutMeText h4{
-    font-size: 2vh;
+#aboutMeText h3{
+    font-size:larger;
+}
+#aboutMeText span{
+    align-self: center;
+    /* background: blue; */
+    margin-left: 35%;
 }
 
 #aboutMeText p{
@@ -400,9 +410,15 @@ footer ul a:hover{
 
 
 @media only screen and (min-width: 1500px) {
-    /* #displayMenuLeft,#displayMenuRight{
-        width: 2.5vw;
-    } */
+    #aboutMeText{
+        padding: 6vw;
+    }
+    #aboutMeText h3{
+        font-size: x-large;
+    }
+    #aboutMeText p{
+        font-size:larger;
+    }
     .singleProject{
        
         width: 16vw;
@@ -410,6 +426,13 @@ footer ul a:hover{
     }
     footer ul{
         justify-content:space-around;
+    }
+}
+@media only screen and (min-width: 800px) {
+    #aboutMeText{
+        overflow: scroll;
+        width: 60vw;
+        justify-content: left;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -421,14 +444,26 @@ footer ul a:hover{
         margin-left:5vw;
         margin-right:5vw;
         width: 90vw;
+        height: 40vh;
+        margin-bottom: 0%;
+        align-self: center;
     }
     #aboutMeText{
         overflow: scroll;
         width: 60vw;
         justify-content: left;
+        height: 35vh;
     }
     .aboutMePic:hover{
         width: 80%;
+    }
+    #Bari{
+        position: absolute;
+        bottom: 3vh;
+        right: 5vh;
+        top:75%;
+
+        
     }
     .singleProject{
         width: 85vw;
