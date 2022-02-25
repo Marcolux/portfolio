@@ -1,7 +1,6 @@
 html{
     padding: 0;
     margin: 0;
-    /* font-family: 'Poppins', sans-serif; */
     font-family:'Tw Cen MT';
     opacity: 1;
     background-color: black;
@@ -11,10 +10,7 @@ body{
     margin: 0;
     opacity: 1;
     background-color: black;
-    /* height: 100vh; */
 }
-
-
 /* _____________________________________________ */
 /*                  NAV BAR                     */
 #displayMenuLeft,#displayMenuRight{
@@ -47,7 +43,6 @@ body{
     padding-left: 0px;
     width: 3vw;
 }
-
 nav{
     width:0vw;
     height: 9vh;
@@ -62,10 +57,7 @@ nav{
     align-items: center;
     transition: .4s ease;
     justify-content: center;
-   
-   
 }
-
 #navigationBar {
     display: flex;
     height: 100%;
@@ -80,8 +72,6 @@ nav{
     overflow: hidden;
     right: 0vw;
 }
-
-
 .barLi{
     color:rgb(255, 207, 103);
     text-shadow: .1vh .05vh rgba(248, 68, 3, 0.913);
@@ -93,15 +83,7 @@ nav{
 .barLi:hover{
     cursor: pointer;
 }
-
-
 /*                  NAV BAR END                  */
-/* _____________________________________________ */
-#Presentation{
-    /* margin: 0;
-    padding: 0;
-    height: 100vh; */
-}
 #PresentationBack{
     width: 100vw;
     height: 100vh;
@@ -112,12 +94,10 @@ nav{
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
-    /* object-fit: cover; */
     opacity: 1;
     margin: 0;
     padding: 0;
 }
-
 #overlay{
     display: flex;
     flex-direction: column;
@@ -132,27 +112,13 @@ nav{
     opacity: 1;
     letter-spacing: .1vw;
     font-weight: bolder;
-    /* margin: 0%;
-    padding: 0%; */
 }
-#overlay {
-    /* font-size: 9vh; */
-    
-    /* background: linear-gradient(100deg,#FA7A00, #FAD900,#ffffff);
-    background-clip:text;
-    -webkit-background-clip: text;
-    box-shadow: 3px .1px black;
-    color: transparent;*/
-    opacity: 1; 
-}
-
 #overlay h1{
     position: absolute;
     top:68vh;
     font-size: 10vh;
     padding: 0%;
     margin: 0%;
-    
 }
 #overlay h3{
     position: absolute;
@@ -163,7 +129,6 @@ nav{
     letter-spacing: .2vw;
 }
 /* ________________ABOUT ME _______________ */
-
 #aboutMe{
     display: flex;
     height: 0vh;
@@ -175,7 +140,6 @@ nav{
     overflow: hidden;
     transition: .7s;
     padding: 0vh;
-
 }
 .aboutMePic{
     height: 20vh;
@@ -192,8 +156,6 @@ nav{
     width: 30vw;
     object-fit: cover;
     border-radius: 1.5vh;
-    
-
 }
 #Chicago{
     position: absolute;
@@ -204,8 +166,7 @@ nav{
     position: absolute;
     top: 3vh;
     right: 5vh;
-    transition: .7s;
-    
+    transition: .7s;   
 }
 #me{
     position: absolute;
@@ -214,7 +175,6 @@ nav{
     height: 15%;
     width:auto;
     border-radius: 3vh;
-
 }
 #infoAboutMe{
     display: flex;
@@ -235,7 +195,6 @@ nav{
     padding: 0;
     transition: .7s;
 }
-
 #aboutMeText{
     display: flex;
     flex-direction: column;
@@ -251,26 +210,19 @@ nav{
 #aboutMeText::-webkit-scrollbar {
     display: none;
 }
-
 #infoAboutMe:hover{
     box-shadow: 1px 1px 23px 5px rgb(255, 197, 72);
-
 }
-
 #aboutMeText h3{
     font-size:larger;
 }
 #aboutMeText span{
     align-self: center;
-    /* background: blue; */
     margin-left: 35%;
 }
-
 #aboutMeText p{
     font-size: larger;
 }
-
-
 #Projects{
     display:flex;
     position: absolute;
@@ -281,10 +233,8 @@ nav{
     height: 0vh;
     transition: .7s;
     overflow: hidden;
-    /* background: linear-gradient(0deg,#0D0D0D 0%,#D94141 22%,#F2600C 40%,#F2A922 60%,#0476D9 80%,rgba(255, 255, 255, 0) 100% ); */
     background: #ffffff;
 }
-
 .singleProject{
     display: flex;
     flex-direction: column;
@@ -300,10 +250,7 @@ nav{
     box-shadow: -1px -1px 13px 5px rgba(0, 0, 0, 0.413);
     padding: 1.5vw;
     background: rgba(184, 184, 184, 0.187);
-    
-
 }
-
 .singleProject img{
     border: 1px solid rgb(0, 0, 0);
     border-radius: 1vw;
@@ -315,20 +262,18 @@ nav{
     object-fit: cover;
 }
 .singleProject p{
- display: flex;
- width: 90%;
- border: 1px solid white;
- color: white;
- bottom: 100%;
- background: black;
- height: 0;
- transition: 1s ease;
- overflow: hidden;
- font-size: 20px;
-text-justify:distribute;
-
+    display: flex;
+    width: 90%;
+    border: 1px solid white;
+    color: white;
+    bottom: 100%;
+    background: black;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+    font-size: 20px;
+    text-justify:distribute;
 }
-
 .singleProject:hover p{
     height: 110vh;
     padding: 15px;
@@ -345,7 +290,6 @@ text-justify:distribute;
     font-style: none;
     text-decoration: none;
     text-shadow: 1px 1px rgba(248, 68, 3, 0.913);
-  
 }
 .singleProject h4:hover{
     text-shadow: 1px 1px rgb(0, 0, 0);
@@ -355,8 +299,6 @@ text-justify:distribute;
     text-decoration: none;
     color: black;
 }
-
-
 footer{
     height:0vh ;
     overflow: hidden;
@@ -385,36 +327,10 @@ footer ul a{
     color:rgb(255, 207, 103);
     font-size: 3vh;
     margin-right: 1vw;
-   
 }
 footer ul a:hover{
     color: rgba(248, 68, 3, 0.913);
 }
-
-#Up{
-    position: absolute;
-    right: 10vw;
-    font-family:'Tw Cen MT';
-    background: none;
-    border:2px solid rgb(255, 207, 103);
-    color:rgb(255, 207, 103);
-    width: 4vw;
-    padding-top: .5vh;
-    padding-bottom: .7vh;
-    font-size: 2vw;
-    text-align: center;
-    justify-items: center;
-    text-decoration: none;
-}
-
-#Up:hover{
-    background: rgb(255, 207, 103);
-    border: none;
-    color: rgba(248, 68, 3, 0.913);
-}
-
-
-
 @media only screen and (min-width: 1500px) {
     #aboutMeText{
         padding: 6vw;
@@ -426,9 +342,7 @@ footer ul a:hover{
         font-size:larger;
     }
     .singleProject{
-       
         width: 16vw;
-       
     }
     footer ul{
         justify-content:space-around;
@@ -464,17 +378,12 @@ footer ul a:hover{
         width: 80%;
     }
     #Bari{
-        position: absolute;
-        bottom: 3vh;
         right: 5vh;
         top:75%;
-
-        
     }
     .singleProject{
         width: 85vw;
     }
-
     #Projects{
         overflow:scroll;
         -ms-overflow-style: none;  /* IE and Edge */
@@ -482,8 +391,7 @@ footer ul a:hover{
     }
     #Projects::-webkit-scrollbar {
         display: none;
-      }
-    
+    }
     .singleProject img{
         width: 70vw;
         margin-top: 1vh;
@@ -491,11 +399,9 @@ footer ul a:hover{
     .singleProject{
         margin-top: 2vh;
     }
-
     .singleProject h4{
         font-size: 30px;
     }
-    
     #overlay h1{
         font-size: 12vw;
         top: 50vh;
@@ -507,10 +413,8 @@ footer ul a:hover{
     nav{
         background: black;
         max-width: 94vw;
-        /* border-bottom: 2px solid rgb(255, 207, 103); */
         padding-bottom: 1vh;
         max-width: 90vw;
-        
     }
     #navigationBar{
         margin-bottom: 3vh;
@@ -527,21 +431,15 @@ footer ul a:hover{
         height: 11vh;
         border-bottom: 2px solid rgb(255, 207, 103);
         display: flex;
-        
-        
     }
-   
     footer{
         height: 0vh;
-        /* margin-bottom: 2vh; */
-        
     }
     footer span{
         display: none;
     }
     #contacts ul{
         margin-left: 0;
-        /* margin-bottom: 15vh; */
         justify-content:space-around;
         width: 100%;
         height: 4vh;

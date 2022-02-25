@@ -1,4 +1,3 @@
-console.log("hello")
 
 let displayMenuLeft = document.getElementById("displayMenuLeft")
 let displayMenuRight = document.getElementById("displayMenuRight")
@@ -16,7 +15,6 @@ let contactsLink= document.getElementById('contactsLink')
 let footer= document.querySelector('footer')
 
 displayMenuLeft.addEventListener('click',()=>{
-    console.log('hi')
     navigationBar.style.width="80vw"
     displayMenuRight.style.right='100%'
     displayMenuLeft.style.right='100%'
@@ -28,8 +26,6 @@ displayMenuLeft.addEventListener('click',()=>{
     footer.style.height='0vh'
     aboutMe.style.height='0vh'
     aboutMe.style.display='flex'
-    
-
 
     if(displayMenuRight.style.right='100%'){
         displayMenuLeft.style.display='none'
@@ -58,15 +54,12 @@ displayMenuRight.addEventListener('click',()=>{
 }})
 
 projectsLink.addEventListener('click', ()=>{
-    console.log('hi')
     if(projects.style.height === '0vh'){
         aboutMe.style.height= '0vh'
         projects.style.height= '91vh';}
     else{
         projects.style.height= '0vh'
-        
     }
-    
 })
 
 aboutMeLink.addEventListener('click',()=>{
@@ -79,11 +72,10 @@ aboutMeLink.addEventListener('click',()=>{
 })
 
 contactsLink.addEventListener('click',()=>{
- 
-if(footer.style.height==='0vh'){
-footer.style.height='10vh'
-}else if(footer.style.height==='10vh'){
-    footer.style.height='0vh'}
+    if(footer.style.height==='0vh'){
+    footer.style.height='10vh'
+    }else if(footer.style.height==='10vh'){
+        footer.style.height='0vh'}
 })
 
 
